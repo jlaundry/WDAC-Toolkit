@@ -1353,6 +1353,13 @@ namespace WDAC_Wizard
         {
             this.label_Error.Visible = false;
         }
+
+        // Test code for doctoring exceptions
+        private void button_AddException_Click(object sender, EventArgs e)
+        {
+            // Create exception object and append to list of exceptions per custom rule
+            this.PolicyCustomRule.AddException()
+        }
     }
 
     // Class for the datastore

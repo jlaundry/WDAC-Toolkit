@@ -71,6 +71,7 @@ namespace WDAC_Wizard
             this.label3 = new System.Windows.Forms.Label();
             this.deleteButton = new System.Windows.Forms.Button();
             this.label_Error = new System.Windows.Forms.Label();
+            this.button_AddException = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.rulesDataGrid)).BeginInit();
             this.panel_CustomRules.SuspendLayout();
             this.panel_FileFolder.SuspendLayout();
@@ -112,7 +113,7 @@ namespace WDAC_Wizard
             this.Column_Files,
             this.Column_Exceptions});
             this.rulesDataGrid.Location = new System.Drawing.Point(162, 162);
-            this.rulesDataGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rulesDataGrid.Margin = new System.Windows.Forms.Padding(2);
             this.rulesDataGrid.Name = "rulesDataGrid";
             this.rulesDataGrid.ReadOnly = true;
             this.rulesDataGrid.RowHeadersVisible = false;
@@ -199,7 +200,7 @@ namespace WDAC_Wizard
             this.button_Create.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Create.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button_Create.Location = new System.Drawing.Point(12, 522);
-            this.button_Create.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_Create.Margin = new System.Windows.Forms.Padding(2);
             this.button_Create.Name = "button_Create";
             this.button_Create.Size = new System.Drawing.Size(121, 33);
             this.button_Create.TabIndex = 92;
@@ -210,6 +211,7 @@ namespace WDAC_Wizard
             // panel_CustomRules
             // 
             this.panel_CustomRules.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel_CustomRules.Controls.Add(this.button_AddException);
             this.panel_CustomRules.Controls.Add(this.publisherInfoLabel);
             this.panel_CustomRules.Controls.Add(this.button_Create);
             this.panel_CustomRules.Controls.Add(this.panel_FileFolder);
@@ -225,7 +227,7 @@ namespace WDAC_Wizard
             this.panel_CustomRules.Controls.Add(this.label_condition);
             this.panel_CustomRules.Controls.Add(this.label4);
             this.panel_CustomRules.Location = new System.Drawing.Point(597, 98);
-            this.panel_CustomRules.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_CustomRules.Margin = new System.Windows.Forms.Padding(2);
             this.panel_CustomRules.Name = "panel_CustomRules";
             this.panel_CustomRules.Size = new System.Drawing.Size(599, 560);
             this.panel_CustomRules.TabIndex = 85;
@@ -250,7 +252,7 @@ namespace WDAC_Wizard
             this.panel_FileFolder.Controls.Add(this.radioButton_Folder);
             this.panel_FileFolder.Controls.Add(this.radioButton_File);
             this.panel_FileFolder.Location = new System.Drawing.Point(436, 278);
-            this.panel_FileFolder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_FileFolder.Margin = new System.Windows.Forms.Padding(2);
             this.panel_FileFolder.Name = "panel_FileFolder";
             this.panel_FileFolder.Size = new System.Drawing.Size(140, 34);
             this.panel_FileFolder.TabIndex = 104;
@@ -262,7 +264,7 @@ namespace WDAC_Wizard
             this.radioButton_Folder.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_Folder.ForeColor = System.Drawing.Color.Black;
             this.radioButton_Folder.Location = new System.Drawing.Point(65, 7);
-            this.radioButton_Folder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton_Folder.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_Folder.Name = "radioButton_Folder";
             this.radioButton_Folder.Size = new System.Drawing.Size(77, 25);
             this.radioButton_Folder.TabIndex = 96;
@@ -276,7 +278,7 @@ namespace WDAC_Wizard
             this.radioButton_File.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_File.ForeColor = System.Drawing.Color.Black;
             this.radioButton_File.Location = new System.Drawing.Point(10, 7);
-            this.radioButton_File.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton_File.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_File.Name = "radioButton_File";
             this.radioButton_File.Size = new System.Drawing.Size(57, 25);
             this.radioButton_File.TabIndex = 95;
@@ -310,7 +312,7 @@ namespace WDAC_Wizard
             this.panel_Publisher_Scroll.Controls.Add(this.labelSlider_0);
             this.panel_Publisher_Scroll.Controls.Add(this.trackBar_Conditions);
             this.panel_Publisher_Scroll.Location = new System.Drawing.Point(13, 277);
-            this.panel_Publisher_Scroll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_Publisher_Scroll.Margin = new System.Windows.Forms.Padding(2);
             this.panel_Publisher_Scroll.Name = "panel_Publisher_Scroll";
             this.panel_Publisher_Scroll.Size = new System.Drawing.Size(472, 187);
             this.panel_Publisher_Scroll.TabIndex = 103;
@@ -320,7 +322,7 @@ namespace WDAC_Wizard
             // 
             this.textBoxSlider_3.Font = new System.Drawing.Font("Tahoma", 8F);
             this.textBoxSlider_3.Location = new System.Drawing.Point(159, 146);
-            this.textBoxSlider_3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxSlider_3.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxSlider_3.Name = "textBoxSlider_3";
             this.textBoxSlider_3.Size = new System.Drawing.Size(279, 24);
             this.textBoxSlider_3.TabIndex = 103;
@@ -341,7 +343,7 @@ namespace WDAC_Wizard
             // 
             this.textBoxSlider_2.Font = new System.Drawing.Font("Tahoma", 8F);
             this.textBoxSlider_2.Location = new System.Drawing.Point(159, 104);
-            this.textBoxSlider_2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxSlider_2.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxSlider_2.Name = "textBoxSlider_2";
             this.textBoxSlider_2.Size = new System.Drawing.Size(279, 24);
             this.textBoxSlider_2.TabIndex = 101;
@@ -362,7 +364,7 @@ namespace WDAC_Wizard
             // 
             this.textBoxSlider_1.Font = new System.Drawing.Font("Tahoma", 8F);
             this.textBoxSlider_1.Location = new System.Drawing.Point(159, 62);
-            this.textBoxSlider_1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxSlider_1.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxSlider_1.Name = "textBoxSlider_1";
             this.textBoxSlider_1.Size = new System.Drawing.Size(279, 24);
             this.textBoxSlider_1.TabIndex = 99;
@@ -383,7 +385,7 @@ namespace WDAC_Wizard
             // 
             this.textBoxSlider_0.Font = new System.Drawing.Font("Tahoma", 8F);
             this.textBoxSlider_0.Location = new System.Drawing.Point(159, 21);
-            this.textBoxSlider_0.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxSlider_0.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxSlider_0.Name = "textBoxSlider_0";
             this.textBoxSlider_0.Size = new System.Drawing.Size(279, 24);
             this.textBoxSlider_0.TabIndex = 95;
@@ -404,7 +406,7 @@ namespace WDAC_Wizard
             // 
             this.trackBar_Conditions.LargeChange = 4;
             this.trackBar_Conditions.Location = new System.Drawing.Point(2, 13);
-            this.trackBar_Conditions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.trackBar_Conditions.Margin = new System.Windows.Forms.Padding(2);
             this.trackBar_Conditions.Maximum = 12;
             this.trackBar_Conditions.Name = "trackBar_Conditions";
             this.trackBar_Conditions.Orientation = System.Windows.Forms.Orientation.Vertical;
@@ -448,7 +450,7 @@ namespace WDAC_Wizard
             "File Attributes",
             "File Hash"});
             this.comboBox_RuleType.Location = new System.Drawing.Point(16, 121);
-            this.comboBox_RuleType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox_RuleType.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_RuleType.Name = "comboBox_RuleType";
             this.comboBox_RuleType.Size = new System.Drawing.Size(187, 26);
             this.comboBox_RuleType.TabIndex = 89;
@@ -460,7 +462,7 @@ namespace WDAC_Wizard
             this.radioButton_Deny.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_Deny.ForeColor = System.Drawing.Color.Black;
             this.radioButton_Deny.Location = new System.Drawing.Point(315, 121);
-            this.radioButton_Deny.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton_Deny.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_Deny.Name = "radioButton_Deny";
             this.radioButton_Deny.Size = new System.Drawing.Size(69, 25);
             this.radioButton_Deny.TabIndex = 90;
@@ -475,7 +477,7 @@ namespace WDAC_Wizard
             this.radioButton_Allow.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_Allow.ForeColor = System.Drawing.Color.Black;
             this.radioButton_Allow.Location = new System.Drawing.Point(232, 121);
-            this.radioButton_Allow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton_Allow.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_Allow.Name = "radioButton_Allow";
             this.radioButton_Allow.Size = new System.Drawing.Size(72, 25);
             this.radioButton_Allow.TabIndex = 89;
@@ -488,7 +490,7 @@ namespace WDAC_Wizard
             // 
             this.textBox_ReferenceFile.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_ReferenceFile.Location = new System.Drawing.Point(14, 241);
-            this.textBox_ReferenceFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_ReferenceFile.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_ReferenceFile.Name = "textBox_ReferenceFile";
             this.textBox_ReferenceFile.Size = new System.Drawing.Size(408, 26);
             this.textBox_ReferenceFile.TabIndex = 88;
@@ -502,7 +504,7 @@ namespace WDAC_Wizard
             this.button_Browse.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Browse.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button_Browse.Location = new System.Drawing.Point(440, 234);
-            this.button_Browse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_Browse.Margin = new System.Windows.Forms.Padding(2);
             this.button_Browse.Name = "button_Browse";
             this.button_Browse.Size = new System.Drawing.Size(83, 33);
             this.button_Browse.TabIndex = 84;
@@ -573,6 +575,16 @@ namespace WDAC_Wizard
     "t text text text";
             this.label_Error.Visible = false;
             // 
+            // button_AddException
+            // 
+            this.button_AddException.Location = new System.Drawing.Point(470, 488);
+            this.button_AddException.Name = "button_AddException";
+            this.button_AddException.Size = new System.Drawing.Size(108, 36);
+            this.button_AddException.TabIndex = 107;
+            this.button_AddException.Text = "Add Exception";
+            this.button_AddException.UseVisualStyleBackColor = true;
+            this.button_AddException.Click += new System.EventHandler(this.button_AddException_Click);
+            // 
             // SigningRules_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -588,7 +600,7 @@ namespace WDAC_Wizard
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rulesDataGrid);
             this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SigningRules_Control";
             this.Size = new System.Drawing.Size(1203, 725);
             this.Load += new System.EventHandler(this.SigningRules_Control_Load);
@@ -645,5 +657,6 @@ namespace WDAC_Wizard
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Files;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Exceptions;
+        private System.Windows.Forms.Button button_AddException;
     }
 }

@@ -302,14 +302,8 @@ namespace WDAC_Wizard
         }
 
         // Methods
-        public void AddException(string type, uint level, string[] fileInfo, string refFile)
+        public void AddException(RuleException ruleException)
         {
-            RuleException ruleException = new RuleException();
-            ruleException.ExceptionType = type;
-            ruleException.ExceptionLevel = level;
-            ruleException.ExceptionFileInfo = fileInfo;
-            ruleException.ExceptionReferenceFile = refFile;
-
             this.ExceptionList.Add(ruleException);
         }
 
@@ -352,10 +346,20 @@ namespace WDAC_Wizard
 
     public class RuleException
     {
-        public string ExceptionType { get; set; } // Publisher, Path, Hash 
+        public enum RulePermission { Allow, Deny };
+
+        public RulePermission ExceptionPermission { get; set; } // Publisher, Path, Hash 
         public uint ExceptionLevel { get; set; } // 0= Publisher, 1=Prod name, 2=Filename
         public string[] ExceptionFileInfo { get; set; }
         public string ExceptionReferenceFile { get; set; } // 
+
+        public RuleException(RulePermission permission, uint exceptionLevel, string[] exceptionFileInfo, string exceptionReferenceFile)
+        {
+            this.ExceptionPermission = permission;
+            this.ExceptionLevel = exceptionLevel;
+            this.ExceptionFileInfo = exceptionFileInfo;
+            this.ExceptionReferenceFile = exceptionReferenceFile; 
+        }
     }
 
     public class Logger
