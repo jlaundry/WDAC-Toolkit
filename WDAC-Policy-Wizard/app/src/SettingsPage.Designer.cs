@@ -75,7 +75,7 @@ namespace WDAC_Wizard
             this.appVersion_Label.AutoSize = true;
             this.appVersion_Label.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.appVersion_Label.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.appVersion_Label.Location = new System.Drawing.Point(27, 359);
+            this.appVersion_Label.Location = new System.Drawing.Point(27, 357);
             this.appVersion_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.appVersion_Label.Name = "appVersion_Label";
             this.appVersion_Label.Size = new System.Drawing.Size(168, 21);
@@ -102,7 +102,7 @@ namespace WDAC_Wizard
             this.terms_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(110)))), ((int)(((byte)(190)))));
             this.terms_Label.Image = global::WDAC_Wizard.Properties.Resources.external_link_symbol_highlight;
             this.terms_Label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.terms_Label.Location = new System.Drawing.Point(25, 444);
+            this.terms_Label.Location = new System.Drawing.Point(27, 444);
             this.terms_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.terms_Label.Name = "terms_Label";
             this.terms_Label.Size = new System.Drawing.Size(129, 21);
@@ -118,7 +118,7 @@ namespace WDAC_Wizard
             this.privacy_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(110)))), ((int)(((byte)(190)))));
             this.privacy_Label.Image = global::WDAC_Wizard.Properties.Resources.external_link_symbol_highlight;
             this.privacy_Label.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.privacy_Label.Location = new System.Drawing.Point(25, 473);
+            this.privacy_Label.Location = new System.Drawing.Point(27, 473);
             this.privacy_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.privacy_Label.Name = "privacy_Label";
             this.privacy_Label.Size = new System.Drawing.Size(164, 21);
@@ -142,7 +142,7 @@ namespace WDAC_Wizard
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(70, 203);
+            this.label5.Location = new System.Drawing.Point(70, 202);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(285, 21);
@@ -222,7 +222,7 @@ namespace WDAC_Wizard
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(72, 100);
+            this.label7.Location = new System.Drawing.Point(72, 99);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(320, 21);
@@ -261,7 +261,7 @@ namespace WDAC_Wizard
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label9.Location = new System.Drawing.Point(27, 15);
+            this.label9.Location = new System.Drawing.Point(25, 15);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(56, 23);
@@ -289,7 +289,7 @@ namespace WDAC_Wizard
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(72, 62);
+            this.label8.Location = new System.Drawing.Point(72, 61);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(441, 21);
